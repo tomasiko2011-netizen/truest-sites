@@ -331,6 +331,64 @@
     .grad-8 { background: linear-gradient(135deg, #10101a 0%, #1a1010 100%); }
 
     /* ── PRICING ── */
+    /* ── DEMOS ── */
+    #demos { background: var(--bg); }
+
+    .demos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .demo-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      display: flex; flex-direction: column; gap: 12px;
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    }
+
+    .demo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(108,92,231,0.18);
+      border-color: rgba(108,92,231,0.4);
+    }
+
+    .demo-icon {
+      font-size: 2.4rem; line-height: 1;
+    }
+
+    .demo-name {
+      font-size: 1rem; font-weight: 700; color: var(--text);
+    }
+
+    .demo-domain {
+      font-size: 0.78rem; font-family: monospace; color: var(--accent2);
+    }
+
+    .demo-desc {
+      color: var(--muted); font-size: 0.87rem; line-height: 1.55; flex: 1;
+    }
+
+    .demo-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 20px; border-radius: var(--radius-sm);
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text); font-size: 0.88rem; font-weight: 600;
+      text-decoration: none; transition: all 0.2s;
+      align-self: flex-start;
+    }
+
+    .demo-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent2);
+      background: rgba(108,92,231,0.06);
+    }
+
+    /* ── /DEMOS ── */
+
     #pricing {
       background: var(--surface);
       border-top: 1px solid var(--border);
@@ -865,6 +923,51 @@
           <span class="card-arrow">→</span>
         </div>
       </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- DEMOS -->
+<section id="demos">
+  <div class="container">
+    <div class="section-label">Демо — наши работы вживую</div>
+    <h2>Посмотрите вживую</h2>
+    <p class="section-sub">Откройте любой сайт — все работают прямо сейчас</p>
+
+    <div class="demos-grid">
+
+      <div class="demo-card fade-up">
+        <div class="demo-icon">🏜️</div>
+        <div class="demo-name">Golden Caravan</div>
+        <div class="demo-domain">goldencaravan.kz</div>
+        <div class="demo-desc">Туристический сайт с AI-чатом</div>
+        <a class="demo-btn" href="https://goldencaravan.kz" target="_blank" rel="noopener">Открыть сайт →</a>
+      </div>
+
+      <div class="demo-card fade-up">
+        <div class="demo-icon">🔧</div>
+        <div class="demo-name">ATLANT SERVICE</div>
+        <div class="demo-domain">artur.truest.kz</div>
+        <div class="demo-desc">Сантехника, галерея, заявки</div>
+        <a class="demo-btn" href="https://artur.truest.kz" target="_blank" rel="noopener">Открыть сайт →</a>
+      </div>
+
+      <div class="demo-card fade-up">
+        <div class="demo-icon">🛒</div>
+        <div class="demo-name">Народный оптовик</div>
+        <div class="demo-domain">halyk.truest.kz</div>
+        <div class="demo-desc">Социальный проект СЗПТ</div>
+        <a class="demo-btn" href="https://halyk.truest.kz" target="_blank" rel="noopener">Открыть сайт →</a>
+      </div>
+
+      <div class="demo-card fade-up">
+        <div class="demo-icon">🍣</div>
+        <div class="demo-name">Sushi Love</div>
+        <div class="demo-domain">sushilove.vercel.app</div>
+        <div class="demo-desc">Суши-бар, меню, бронь</div>
+        <a class="demo-btn" href="https://sushilove.vercel.app" target="_blank" rel="noopener">Открыть сайт →</a>
+      </div>
 
     </div>
   </div>
